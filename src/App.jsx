@@ -26,7 +26,7 @@ const App = () => {
     }
     sendChat(input, "USER");
     try {
-      const apiResponse = await fetch("http://localhost:3001/api/chat", {
+      const apiResponse = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

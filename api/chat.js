@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 dotenv.config();
 
 const openAI = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.APIkey,
 });
 
 export default async function handler(req, res) { 
