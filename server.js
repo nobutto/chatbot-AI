@@ -1,8 +1,4 @@
-// server.js (ルートディレクトリに作成)
-// import http from 'http';
-// import { parse } from 'url';
-// import { json } from 'body-parser';
-import express from 'express';  // Expressを使うことで簡単にAPIを作れる
+import express from 'express'; 
 import OpenAI from 'openai';
 import dotenv from 'dotenv';
 import cors from 'cors';
@@ -38,7 +34,6 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
-// サーバーを立ち上げる
 const port = 3001;
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);

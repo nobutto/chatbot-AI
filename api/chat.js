@@ -16,7 +16,9 @@ export default async function handler(req, res) {
             messages: [
                 {role: "system", content: "あなたは親しみやすい子供です。"},
                 {role: "user", content: message},
+                
             ],
+            max_tokens: 40,
         });
 
         const reply = chatCompletion.choices[0].message.content;
